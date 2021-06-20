@@ -1,0 +1,73 @@
+@mixin pc($width: 768px) {
+  @media screen and (min-width: $width) {
+    @content;
+  }
+}
+
+@mixin sp($width: 767px) {
+  @media screen and (max-width: $width) {
+    @content;
+  }
+}
+
+@mixin rwd-prop($property, $pc, $sp:false) {
+  #{$property}: $pc;
+
+  @if $sp {
+    @include sp {
+        #{$property}: $sp;
+    }
+  }
+}
+
+@mixin rwd-fz($pc, $sp: false) {
+  font-size: #{$pc}rem;
+
+  @if $sp{
+    @include sp {
+        font-size: #{$sp}rem;
+    }
+  }
+}
+
+@mixin rwd-m($pc, $sp: false) {
+  margin: $pc;
+
+  @if $sp{
+    @include sp {
+        margin: $sp;
+    }
+  }
+}
+
+@mixin rwd-p($pc, $sp: false) {
+  padding: $pc;
+
+  @if $sp{
+    @include sp {
+        padding: $sp;
+    }
+  }
+}
+
+@mixin bg {
+  background-size: contain;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+@mixin center {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin hover {
+  transition: opacity $anime;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
