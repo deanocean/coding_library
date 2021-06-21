@@ -31,6 +31,10 @@ body {
   padding-top: 80px;
 }
 
+.div {
+  margin: 100vh auto;
+}
+
 #header {
   height: 60px;
   background: grey;

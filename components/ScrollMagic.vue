@@ -26,12 +26,13 @@ export default {
 </script>
 
 <style lang="scss" scope>
-  .box {
-    position: relative;
-    left: -100vw;
-    transition: all .3s;
-    &.is-animated {
-      left: 0;
-    }
+.box {
+  position: relative;
+  left: -100vw;
+  margin: 100vh auto;
+  transition: all .3s;
+  &.is-animated {
+    left: 0;
   }
+}
 </style>
