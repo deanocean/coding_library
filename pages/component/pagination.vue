@@ -1,6 +1,8 @@
 <template>
-  <div>
-    <Row />
+  <div class="container">
+    <div>
+      <Pagination />
+    </div>
   </div>
 </template>
 

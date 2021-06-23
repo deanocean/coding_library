@@ -1,0 +1,65 @@
+@use "sass:math";
+
+$container: 1100px;
+$gutter-x: 30px;
+$gutter-y: 30px;
+$grid-num: 12;
+
+.container {
+  max-width: calc(#{$container} + #{$gutter-x});
+  width: 100%;
+  margin: 0 auto;
+  padding-left: math.div($gutter-x, 2);
+  padding-right: math.div($gutter-x, 2);
+  // @include pad {
+  //     padding: 0 40px;
+  // }
+  @include sp {
+      padding: 0 15px;
+  }
+}
+
+.row{
+  display:flex;
+  margin-top: -1 * $gutter-y;
+  margin-left: -1 * math.div($gutter-x, 2);
+  margin-right: -1 * math.div($gutter-x, 2);
+  flex-wrap:wrap;
+}
+
+%col{
+  flex-shrink: 0;
+  padding-left: math.div($gutter-x, 2);
+  padding-right: math.div($gutter-x, 2);
+  margin-top: $gutter-y;
+}
+
+@for $i from 1 through $grid-num{
+  .col-#{$i}{
+    @extend %col;
+    width: 100% * math.div($i, $grid-num);  
+    @include sp {
+      width: 100%;
+    }
+  }
+}
+
+// @for $i from 1 through $grid-num{
+//   @include pad {
+//     .col-md-#{$i}{
+//       padding-left: math.div($gutter-x, 2);
+//       padding-right: math.div($gutter-x, 2);
+//       width: 100% * math.div($i, $grid-num);  
+//     }
+//   }
+// }
+
+@for $i from 1 through $grid-num{
+  @include sp {
+    .col-sm-#{$i}{
+      padding-left: math.div($gutter-x, 2);
+      padding-right: math.div($gutter-x, 2);
+      width: 100% * math.div($i, $grid-num);  
+    }
+  }
+}

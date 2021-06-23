@@ -103,7 +103,7 @@ export default {
   &::before,
   &::after {
     content: "";
-    @include center;
+    @include pos-center;
     background-color: #fff;
   }
 

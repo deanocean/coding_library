@@ -1,6 +1,8 @@
 <template>
-  <div>
-    <Row />
+  <div class="container">
+    <div>
+      <IconList />
+    </div>
   </div>
 </template>
 

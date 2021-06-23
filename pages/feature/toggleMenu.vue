@@ -1,6 +1,8 @@
 <template>
-  <div>
-    <Row />
+  <div class="container">
+    <div>
+      <ToggleMenu />
+    </div>
   </div>
 </template>
 

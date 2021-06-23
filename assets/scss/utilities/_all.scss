@@ -1,0 +1,105 @@
+
+/* ---------- layout ---------- */
+.clearFix:after {
+  clear: both;
+  display: block;
+  content: "";
+  height: 0;
+  line-height: 0;
+}
+
+.pos-relative {
+  position: relative;
+}
+
+.pos-absolute {
+  position: relative;
+}
+
+
+/* ---------- font size ---------- */
+.fz-12 {
+  font-size: 1.2rem;
+}
+
+
+/* ---------- font style ---------- */
+.f-style-normal {
+  font-style: normal;
+}
+
+
+/* ---------- color ---------- */
+.color-white {
+  color: #fff;
+}
+
+.color-black {
+  color: #000;
+}
+
+
+/* ---------- background ---------- */
+.bgc-black {
+  background-color: #000;
+}
+
+
+/* ---------- flex ---------- */
+.d-flex {
+  display: flex;
+}
+.justify-content-between {
+  justify-content: space-between;
+}
+.justify-content-end {
+  justify-content: flex-end;
+}
+
+.align-items-end {
+  align-items: flex-end;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.flex-row-reverse {
+  flex-direction: row-reverse;
+}
+
+
+/* ---------- text-align ---------- */
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+
+
+/* ---------- others ---------- */
+// .sp-only {
+//   display: none;
+//   @include sp {
+//       display: initial;
+//   }
+// }
+
+// .pc-pad-only {
+//   @include sp {
+//       display: none;
+//   }
+// }
+
+// .pc-only {
+//   @include pad {
+//       display: none;
+//   }
+// }
+
+
+/* ---------- width & height ---------- */
+.h-100 {
+  height: 100%;
+}
