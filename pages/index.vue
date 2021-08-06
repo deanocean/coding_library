@@ -14,7 +14,7 @@
         <nuxt-link to="comp/header">header</nuxt-link>
         <nuxt-link to="comp/header-bs">header-bs</nuxt-link>
         <nuxt-link to="comp/footer">footer</nuxt-link>
-        <nuxt-link to="comp/footer">fixed</nuxt-link>
+        <nuxt-link to="comp/fixed">fixed</nuxt-link>
         <nuxt-link to="comp/iconList">iconList</nuxt-link>
         <nuxt-link to="comp/pagination">pagination</nuxt-link>
         <nuxt-link to="comp/pairList">pairList</nuxt-link>
