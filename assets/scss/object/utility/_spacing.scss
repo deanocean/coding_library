@@ -1,0 +1,23 @@
+// margin & padding 
+// $properties: (
+//     "mt": margin-top,
+//     "mb": margin-bottom,
+//     "ml": margin-left,
+//     "mr": margin-right,
+//     "pt": padding-top,
+//     "pb": padding-bottom,
+//     "pl": padding-left,
+//     "pr": padding-right,
+// );
+
+// @each $property, $property-value in $properties {
+// 	@for $i from 0 through 10 {
+// 		.u-#{$property}-#{$i*10} {
+// 			#{$property-value}: #{$i}rem !important;
+
+// 			@include sp {
+// 				#{$property-value}: #{$i/2}rem !important;
+// 			}
+// 		}
+// 	}
+// }

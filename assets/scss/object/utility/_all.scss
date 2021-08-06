@@ -1,3 +1,26 @@
+/* ---------- multiple ---------- */
+.u-center {
+  @include center;
+}
+
+.u-bg {
+  @include bg;
+}
+
+.u-hover {
+  @include hover;
+}
+
+.u-flex-center {
+  @include flex-center;
+}
+
+
+/* ---------- writing ---------- */
+.u-writing-v {
+  writing-mode: vertical-rl !important;
+}
+
 
 /* ---------- layout ---------- */
 .clearFix:after {
@@ -102,4 +125,14 @@
 /* ---------- width & height ---------- */
 .h-100 {
   height: 100%;
+}
+
+
+/* ---------- font-weight ---------- */
+.u-fw-bold {
+  font-weight: bold !important;
+}
+
+.u-fw-normal {
+  font-weight: normal !important;
 }

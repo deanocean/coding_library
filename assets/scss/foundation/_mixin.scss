@@ -1,6 +1,24 @@
 /* ---------- breakpoint ---------- */
+@mixin pc-only($width: 1000px) {
+  @media screen and (min-width: $width) {
+    @content;
+  }
+}
+
 @mixin pc($width: 768px) {
   @media screen and (min-width: $width) {
+    @content;
+  }
+}
+
+@mixin tab($width: 1000px) {
+  @media screen and (max-width: $width) {
+    @content;
+  }
+}
+
+@mixin tab-only {
+  @media screen and (min-width: 768px) and (max-width: 1000px) {
     @content;
   }
 }
@@ -10,6 +28,12 @@
     @content;
   }
 }
+
+@include pc-only;
+@include pc;
+@include tab;
+@include tab-only;
+@include sp;
 
 /* ---------- rwd ---------- */
 @mixin rwd-prop($property, $pc, $sp:false) {
@@ -53,13 +77,21 @@
 }
 
 /* ---------- shortcut ---------- */
-@mixin bgi {
+@mixin bg {
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
 }
 
 @mixin pos-center {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin center {
   position: absolute;
   left: 50%;
   top: 50%;

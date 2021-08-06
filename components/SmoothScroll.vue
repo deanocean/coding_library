@@ -31,7 +31,7 @@ body {
   padding-top: 80px;
 }
 
-.div {
+.box {
   margin: 100vh auto;
 }
 
@@ -43,4 +43,5 @@ body {
   left: 0;
   right: 0;
 }
+
 </style>

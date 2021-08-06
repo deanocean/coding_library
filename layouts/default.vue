@@ -1,5 +1,6 @@
 <template>
   <div>
+    <a href="/" style="position: fixed; right: 2%; top: 20%; z-index: 1000000; font-weight: bold; text-shadow: 0 0 2px rgba(255, 255, 255, 1);">← Home</a>
     <Nuxt />
   </div>
 </template>

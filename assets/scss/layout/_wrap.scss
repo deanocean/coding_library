@@ -1,0 +1,17 @@
+
+.l-wrap {
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 2rem;
+	box-sizing: border-box;
+
+	@include pc {
+		max-width: 1040px; // 各デザイン毎に変更
+	}
+
+	@include sp {
+		width: 90%;
+		margin: 0 auto;
+		padding: 0;
+	}
+}

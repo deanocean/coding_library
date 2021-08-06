@@ -1,5 +1,11 @@
 @charset "UTF-8";
 
+// border-radius
+$bdrs-sm: 10px;
+$bdrs: 20px;
+$bdrs-lg: 30px;
+
+
 // transition
 $anime: 0.3s ease;
 
@@ -7,6 +13,9 @@ $anime: 0.3s ease;
 // black
 $black: #373737;
 $white: #fff;
+$primary: #0095AE;
+$secondary: #F7F6EA;
+$tertiary: #EF8741;
 
 //フォント指定
 // Noto
