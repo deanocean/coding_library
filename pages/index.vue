@@ -9,6 +9,7 @@
 
         <nuxt-link to="comp/breadcrumb">breadcrumb</nuxt-link>
         <nuxt-link to="comp/btn">btn</nuxt-link>
+        <nuxt-link to="comp/btn02">btn02</nuxt-link>
         <nuxt-link to="comp/links">links</nuxt-link>
         <nuxt-link to="comp/card">card</nuxt-link>
         <nuxt-link to="comp/header">header</nuxt-link>
