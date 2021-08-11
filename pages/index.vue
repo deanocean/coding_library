@@ -14,6 +14,7 @@
         <nuxt-link to="comp/card">card</nuxt-link>
         <nuxt-link to="comp/header">header</nuxt-link>
         <nuxt-link to="comp/header-bs">header-bs</nuxt-link>
+        <nuxt-link to="comp/header-bs02">header-bs02</nuxt-link>
         <nuxt-link to="comp/footer">footer</nuxt-link>
         <nuxt-link to="comp/fixed">fixed</nuxt-link>
         <nuxt-link to="comp/iconList">iconList</nuxt-link>
